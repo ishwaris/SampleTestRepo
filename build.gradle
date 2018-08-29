@@ -14,7 +14,11 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
 allprojects {
     repositories {
         google()
